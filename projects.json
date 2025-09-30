@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Hangman Flutter Game",
+    "category": "flutter",
+    "image": "https://github.com/CodderPrince/Hangman1/raw/main/UI/Screenshot_20250807_224921.png",
+    "desc": "Flutter word guessing game with offline audio, SQLite leaderboard, and two categories.",
+    "links": {
+      "view": "https://drive.google.com/file/d/1HrxkYXZ5w39tL741GRARccA9kVoLC6yf/view?usp=sharing",
+      "code": "https://github.com/CodderPrince/Hangman1"
+    }
+  },
+  {
+    "name": "Water Tracker App",
+    "category": "flutter",
+    "image": "https://github.com/CodderPrince/Water_Tracker/raw/main/UI/Screenshot_20250804_025026.png",
+    "desc": "Flutter app for daily water intake tracking, featuring animations and celebratory feedback.",
+    "links": {
+      "view": "https://github.com/CodderPrince/Water_Tracker/blob/main/apk/Water%20Tracker.apk",
+      "code": "https://github.com/CodderPrince/Water_Tracker"
+    }
+  },
+  {
+    "name": "Object Detection with YOLOv8",
+    "category": "flask",
+    "image": "https://github.com/CodderPrince/Real-Time-Object-Detection-and-Tracking--using-YOLOv8/blob/main/images/detect1.png?raw=true",
+    "desc": "YOLOv8 and Streamlit web app for real-time object detection in streams and static media.",
+    "links": {
+      "view": "https://realtime-object-tracking.streamlit.app/",
+      "code": "https://github.com/CodderPrince/Real-Time-Object-Detection-and-Tracking--using-YOLOv8"
+    }
+  },
+  {
+    "name": "Amar Adalat App",
+    "category": "flutter",
+    "image": "https://github.com/CodderPrince/Amar_Adalat/raw/master/Amar_Adalat%20UI/Screenshot_20250902_162708.png",
+    "desc": "Civic tech Flutter app for legal awareness and access to justice in Bangladesh, featuring legal guides, aid directory, an AI chatbot, and a reporting system.",
+    "links": {
+      "view": "https://github.com/CodderPrince/Amar_Adalat/blob/master/APK/Amar_Adalat.apk",
+      "code": "https://github.com/CodderPrince/Amar_Adalat/tree/master"
+    }
+  },
+  {
+    "name": "Real-Time Bus Tracking App",
+    "category": "flask",
+    "image": "https://github.com/CodderPrince/Bus-Tracking/blob/main/Screenshot%202025-09-27%20174103.png?raw=true",
+    "desc": "Streamlit app for bus tracking, schedule, and journey planning.",
+    "links": {
+      "view": "https://bus-tracking.streamlit.app/",
+      "code": "https://github.com/CodderPrince/Bus-Tracking"
+    }
+  },
+  {
+    "name": "Colorful QR Code Generator",
+    "category": "flask",
+    "image": "https://github.com/CodderPrince/Streamlit-Project/raw/main/ColorfullQRcode/custom_QR_code5.png",
+    "desc": "App to generate custom colorful QR codes with logo.",
+    "links": {
+      "view": "https://colorfulqrcodegenerator5.streamlit.app/",
+      "code": "https://github.com/CodderPrince/Streamlit-Project"
+    }
+  },
+  {
+    "name": "Sudoku Solver App",
+    "category": "javafx",
+    "image": "https://github.com/CodderPrince/SudokuSolverApp-/raw/main/Screenshot%202024-12-07%20145026.png",
+    "desc": "A desktop Sudoku solver application built with JavaFX.",
+    "links": {
+      "view": "https://github.com/CodderPrince/SudokuSolverApp-/tree/main/SudokuSolver/src/application",
+      "code": "https://github.com/CodderPrince/SudokuSolverApp-"
+    }
+  },
+  {
+    "name": "CGPA Calculator App",
+    "category": "flutter",
+    "image": "https://github.com/CodderPrince/Images/raw/main/demo1.png",
+    "desc": "Flutter app to calculate semester GPA and overall CGPA, featuring PDF export for semester-wise breakdown and final results.",
+    "links": {
+      "view": "https://github.com/CodderPrince/Images/blob/main/CGPA%20Calculator1.apk",
+      "code": "https://github.com/CodderPrince/CGPA_Calculator"
+    }
+  },
+  {
+    "name": "DSA Lottery App",
+    "category": "flutter, android",
+    "image": "https://github.com/CodderPrince/DSA_Lottery_App/blob/main/dsa_lottery/assets/icon/icon1.png?raw=true",
+    "desc": "Flutter app to randomly assign DSA projects to students using a lottery system, and export the assignments as a colorful PDF report.",
+    "links": {
+      "view": "https://github.com/CodderPrince/DSA_Lottery_App/blob/main/DSA%20Lottery.apk",
+      "code": "https://github.com/CodderPrince/DSA_Lottery_App"
+    }
+  },
+  {
+    "name": "Network Packet Routing Simulator",
+    "category": "flask",
+    "image": "https://github.com/CodderPrince/Network_Packet_Routing_Simulator/raw/main/Network%20Packet%20Routing%20Simulator/UI/image_2025-08-05_17-12-39.png",
+    "desc": "Routing simulator with C++ (CLI) and Python/Tkinter (GUI) implementations of Dijkstra’s shortest path algorithm for network packet routing visualization.",
+    "links": {
+      "view": "https://github.com/CodderPrince/Network_Packet_Routing_Simulator/blob/main/README.md",
+      "code": "https://github.com/CodderPrince/Network_Packet_Routing_Simulator"
+    }
+  },
+  {
+    "name": "Offline Games Collection",
+    "category": "javafx",
+    "image": "https://github.com/CodderPrince/Offline_Games_Collection/raw/main/UI/image_2025-08-09_02-20-13.png",
+    "desc": "A JavaFX desktop application featuring 15+ classic offline games, a user management system, and a persistent local leaderboard.",
+    "links": {
+      "view": "https://github.com/CodderPrince/Offline_Games_Collection/tree/main/UI",
+      "code": "https://github.com/CodderPrince/Offline_Games_Collection"
+    }
+  },
+  {
+    "name": "Smart City Toolkit",
+    "category": "javafx",
+    "image": "https://github.com/CodderPrince/Smart_City/raw/main/UI/image_2025-08-09_03-27-12.png",
+    "desc": "A modular JavaFX desktop app suite including Distance Calculator, Fire Station Finder, and a real-time Weather App using OpenWeatherMap API.",
+    "links": {
+      "view": "https://github.com/CodderPrince/Smart_City/tree/main/UI",
+      "code": "https://github.com/CodderPrince/Smart_City"
+    }
+  },
+  {
+    "name": "Guess Random Number Game",
+    "category": "flask",
+    "image": "https://github.com/CodderPrince/Guess-Random-Number/blob/main/Screenshot%202025-09-27%20173436.png?raw=true",
+    "desc": "Simple number guessing web game (1-5) built with Python and Streamlit.",
+    "links": {
+      "view": "https://guess-random-number-kdf83eveud9bliceig8ttb.streamlit.app/",
+      "code": "https://github.com/CodderPrince/Guess-Random-Number"
+    }
+  },
+  {
+    "name": "Plagiarism Checker Web App",
+    "category": "flask",
+    "image": "https://github.com/CodderPrince/1-2_Practice/blob/main/1-2/Project/Final%20Project/12105007%20Prince/plagiarism.png?raw=true",
+    "desc": "A Flask web application interface that integrates a C++ backend (plagiarism.out) for document plagiarism checking with file uploads.",
+    "links": {
+      "view": "https://github.com/CodderPrince/1-2_Practice/tree/main/1-2/Project/Final%20Project/12105007%20Prince/templates",
+      "code": "https://github.com/CodderPrince/1-2_Practice/tree/main/1-2/Project/Final%20Project/12105007%20Prince"
+    }
+  }
+]

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Portfolio - Projects</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Isotope CSS / Your custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="section-header">
+        <a href="#" class="logo" data-section="home"><i class="fab fa-node-js"></i> Prince</a>
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" data-section="home">Home</a></li>
+                <li><a href="#" data-section="about">About</a></li>
+                <li><a href="#" data-section="skills">Skills</a></li>
+                <li><a href="#" data-section="education">Education</a></li>
+                <li><a href="#" data-section="work-home" class="active">Work</a></li>
+                <li><a href="#" data-section="experience-home">Experience</a></li>
+                <li><a href="#" data-section="achievement">Achievements</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects-content" id="projects">
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+        <!-- Filter Buttons -->
+        <div id="filters" class="button-group">
+            <button class="btn is-checked" data-filter="*">All Projects</button>
+            <button class="btn" data-filter=".flutter">Flutter Development</button>
+            <button class="btn" data-filter=".flask">Flask Development</button>
+            <button class="btn" data-filter=".android">Android App</button>
+            <button class="btn" data-filter=".javafx">JavaFX App</button>
+        </div>
+
+        <!-- Projects Container -->
+        <div class="box-container">
+            <!-- Projects dynamically loaded here by projects.js -->
+        </div>
+
+        <!-- Back Button -->
+        <div class="backbtn">
+            <a href="#" class="btn" data-section="work-home">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Home Work Section</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="section-footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Prince's Portfolio</h3>
+                <p>Thank you for visiting my personal portfolio website. Connect with me over socials.<br /><br />Keep
+                    Rising 🚀. Connect with me over live chat!</p>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#" data-section="home"><i class="fas fa-chevron-circle-right"></i> home</a>
+                <a href="#" data-section="about"><i class="fas fa-chevron-circle-right"></i> about</a>
+                <a href="#" data-section="skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+                <a href="#" data-section="education"><i class="fas fa-chevron-circle-right"></i> education</a>
+                <a href="#" data-section="work-home" class="active"><i class="fas fa-chevron-circle-right"></i> work</a>
+                <a href="#" data-section="experience-home"><i class="fas fa-chevron-circle-right"></i> experience</a>
+                <a href="#" data-section="achievement" class="active"><i class="fas fa-chevron-circle-right"></i> achievement</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +8801601-942144</p>
+                <p><i class="fas fa-envelope"></i> prince.12105007@student.brur.ac.bd</p>
+                <p><i class="fas fa-map-marked-alt"></i> Rangpur Sadar, Rangpur, Bangladesh</p>
+                <div class="share">
+                    <a href="https://www.linkedin.com/in/maps-lover-408616378/" class="fab fa-linkedin" target="_blank"
+                        aria-label="LinkedIn"></a>
+                    <a href="https://github.com/CodderPrince" class="fab fa-github" target="_blank"
+                        aria-label="GitHub"></a>
+                    <a href="mailto:prince.12105007@student.brur.ac.bd" class="fas fa-envelope" aria-label="Mail"
+                        target="_blank"></a>
+                    <a href="https://x.com/NahianPrince14" class="fab fa-twitter" target="_blank"
+                        aria-label="Twitter"></a>
+                    <a href="https://t.me/PRINCE_CSE14" class="fab fa-telegram-plane" target="_blank"
+                        aria-label="Telegram"></a>
+                </div>
+            </div>
+        </div>
+        <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
+                href="https://www.linkedin.com/in/maps-lover-408616378/">Nahian Prince</a></h1>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/common.js"></script>
+
+</body>
+
+</html>

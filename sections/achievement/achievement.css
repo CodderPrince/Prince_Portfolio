@@ -1,0 +1,867 @@
+/* Import global fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+/* --- NAV BAR STYLES (Consistent with other sections) --- */
+
+.section-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: #00484b;
+  box-shadow: 0 1px 4px rgba(174, 176, 146, 0.3);
+}
+
+.section-header .logo {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.section-header .logo i {
+  font-size: 2.2rem;
+}
+
+.section-header .logo:hover {
+  color: #fcf405;
+}
+
+.section-header .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header .navbar li {
+  margin-left: 2.5rem;
+}
+
+.section-header .navbar ul li a {
+  font-size: 1.57rem;
+  color: #fff200;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04rem;
+  transition: 0.2s;
+}
+
+.section-header .navbar ul li a.active,
+.section-header .navbar ul li a:hover {
+  color: #ffffff;
+  border-bottom: .2rem solid #ff0101;
+  padding: .5rem 0;
+  animation: glow 1s infinite alternate;
+}
+
+/* Hamburger icon starts */
+.section-header #menu {
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(255, 30, 0);
+  display: none;
+}
+
+@media(max-width:768px) {
+  .section-header #menu {
+    display: block;
+  }
+
+  .section-header .navbar {
+    position: fixed;
+    top: 6.5rem;
+    right: -120%;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #ff0000;
+  }
+
+  .section-header .navbar ul {
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+  .section-header .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    width: 26rem;
+  }
+
+  .section-header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: #b80a0a;
+    font-size: 2rem;
+  }
+
+  .section-header .navbar ul li a.active,
+  .section-header .navbar ul li a:hover {
+    padding: 1rem;
+    color: #fff;
+    border-radius: .5rem;
+    border-bottom: .5rem solid #0b0000;
+  }
+
+  .section-header .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .section-header .navbar.nav-toggle {
+    right: 0;
+  }
+}
+
+/* --- ACHIEVEMENT CONTENT STYLES (UNIQUE DESIGN) --- */
+
+.achievement-content {
+  min-height: calc(100vh - 6.5rem - 24rem);
+  padding-top: 8rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5rem;
+  width: 100%;
+  /* Darker/Unique background for this section */
+  background: #0d0426;
+  text-align: center;
+}
+
+.achievement-content .heading {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.achievement-content .heading span {
+  color: #5dff48;
+  /* Unique accent color for the span */
+
+}
+
+/* Button Layout - Responsive Grid */
+.achievement-content .achievement-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Responsive grid */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 5rem auto;
+  padding: 0 2rem;
+}
+
+/* General Achievement Button Styling */
+.achievement-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.5s ease, background-color 0.3s ease;
+  min-height: 120px;
+  /* Ensure buttons are large */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  /* animation: bounce 0.5s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  /* animation: zoom-in 0.6s infinite alternate; */
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  /* animation: glow 1s infinite alternate; */
+  /* animation: blur 0.6s infinite alternate; */
+  /* animation: hue-rotate 3s linear infinite; */
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.9s infinite alternate; */
+  /* animation: heartbeat 3s infinite; */
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+}
+
+.achievement-btn i {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Button Hover Animation */
+.achievement-btn:hover {
+  transform: translateY(-8px) scale(1.02);
+  filter: brightness(1.1);
+  /* Uses a white pulsing border animation */
+  /* animation: pulse-border 1.5s infinite alternate;  */
+  /* animation: bounce 0.5s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  animation: zoom-in 0.6s infinite alternate;
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  /* animation: glow 1s infinite alternate; */
+  /* animation: blur 0.6s infinite alternate; */
+  /* animation: hue-rotate 3s linear infinite; */
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.9s infinite alternate; */
+  /* animation: heartbeat 3s infinite; */
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+}
+
+/* --- UNIQUE BUTTON COLORS & GLOWS (Keep these) --- */
+
+/* 1. Academic (Blue/White) */
+.btn-academic {
+  background-color: #2a6fdb;
+}
+
+.btn-academic:hover {
+  box-shadow: 0 0 15px #7498e7, 0 0 30px #7498e7;
+}
+
+
+.btn-admission {
+  background-color: #531a7e; /* Dark Blue for Admissions */
+}
+.btn-admission:hover {
+  box-shadow: 0 0 15px #b4bfff, 0 0 30px #b8c1f4;
+}
+/* 2. App Development (Teal/Green) */
+.btn-appdev {
+  background-color: #00bcd4;
+  /* Cyan/Teal */
+}
+
+.btn-appdev:hover {
+  box-shadow: 0 0 15px #6ff9ff, 0 0 30px #6ff9ff;
+}
+
+/* 2. Blogging (Yellow/Gold) */
+.btn-blog {
+  background-color: #918305;
+  /* Yellow/Gold */
+  color: #ffffff; /* Dark text for contrast */
+}
+.btn-blog:hover {
+  box-shadow: 0 0 15px #ffff72, 0 0 30px #ffff72;
+}
+/* 3. Competitive Programming (Red/Yellow) */
+.btn-cprog {
+  background-color: #f44336;
+  /* Red */
+}
+
+.btn-cprog:hover {
+  box-shadow: 0 0 15px #ff7961, 0 0 30px #ff7961;
+}
+
+/* 4. Gardening (Green/Earth) */
+.btn-gardening {
+  background-color: #4caf50;
+  /* Green */
+}
+
+.btn-gardening:hover {
+  box-shadow: 0 0 15px #81c784, 0 0 30px #81c784;
+}
+
+/* 5. Photography (Purple/Light) */
+.btn-photography {
+  background-color: #9c27b0;
+  /* Purple */
+}
+
+.btn-photography:hover {
+  box-shadow: 0 0 15px #d05ce3, 0 0 30px #d05ce3;
+}
+
+/* 6. Competitions (Orange/Gold) - NEW */
+.btn-competitions {
+  background-color: #dd8500;
+  /* Orange */
+}
+
+.btn-competitions:hover {
+  box-shadow: 0 0 15px #ffb74d, 0 0 30px #ffb74d;
+}
+
+/* 7. Progress (Indigo/Blue) - NEW */
+.btn-progress {
+  background-color: #5b29c7;
+  /* Indigo */
+}
+
+.btn-progress:hover {
+  box-shadow: 0 0 15px #a679cb, 0 0 30px #a279cb;
+}
+
+/* 8. GitHub (Dark/Black) - NEW */
+.btn-github {
+  background-color: #550024; /* Dark Grey/Black for GitHub */
+}
+
+.btn-github:hover {
+  /* Using a light grey/white glow for contrast */
+  box-shadow: 0 0 15px #bbbbbb, 0 0 30px #ffffff; 
+}
+
+
+/* --- UPDATED: Style for the dynamically displayed category title (e.g., "Academic Achievements") --- */
+/* Target the h3 with the class details-heading inside the gallery container */
+.achievement-gallery-container h3.details-heading {
+  font-size: 4.2rem; /* Significantly increased font size */
+  color: #ffcc00; /* Changed color to bright yellow/gold */
+  margin: 5rem auto 2rem auto; /* Added vertical spacing and bottom margin */
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding: 0.5rem 1rem;
+  line-height: 1.2;
+}
+
+
+/* --- ACHIEVEMENT GALLERY STYLES (New/Adapted from work-home) --- */
+
+.achievement-gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.achievement-gallery-container .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+/* FIX: Set dark background and centering for image loader */
+/* after click button image design */
+.achievement-gallery-container .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+  background: #1a0f40;
+  /* Dark background to see the spinner! */
+  border: none;
+  /* animation: glow 1s infinite alternate; */
+  animation: pulse-border 1.5s infinite alternate;
+  /* animation: bounce 0.5s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  /* animation: zoom-in 0.6s infinite alternate; */
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  /* animation: glow 1s infinite alternate; */
+  /* animation: blur 0.6s infinite alternate; */
+  /* animation: hue-rotate 3s linear infinite; */
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.9s infinite alternate; */
+  /* animation: heartbeat 3s infinite; */
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+  /* Centering the content/loader */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FIX: Image properties for loading state */
+.achievement-gallery-container .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  /* Initially hide the image */
+  transition: opacity 0.3s ease;
+  /* Fade in effect */
+  position: absolute;
+  /* Allows it to cover the entire box */
+  top: 0;
+  left: 0;
+}
+
+.achievement-gallery-container .box-container .box img.image-loaded {
+  opacity: 1;
+  /* Show the image when loaded */
+}
+
+/* Individual Image Spinner */
+.box-image-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  /* Ensure it's above the content overlay (which is top 85%) */
+}
+
+/* Reuse the main spinner style for individual box loader */
+.box-image-loader .spinner {
+  border-width: 3px;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+
+
+.achievement-gallery-container .box-container .box .content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 85%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+}
+
+.achievement-gallery-container .box-container .box:hover .content {
+  top: 25%;
+  overflow-y: auto;
+  /* Allow scrolling for long descriptions */
+  animation: bounce 0.5s infinite alternate;
+}
+
+.achievement-gallery-container .box-container .box .content .tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  width: 100%;
+  padding-left: 1rem;
+  background: #005c3f;
+  /* when open grid view */
+  /* Darker header for content */
+  color: #fff;
+  font-weight: 300;
+}
+
+.achievement-gallery-container .box-container .box .content .tag h3 {
+  font-size: 2rem;
+}
+
+.achievement-gallery-container .desc {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.achievement-gallery-container .desc p {
+  font-size: 1.5rem;
+  color: #333;
+  /* Dark text on light background */
+}
+
+.achievement-gallery-container .desc .btns {
+  display: flex;
+  justify-content: center;
+  /* Center the single button */
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* Styling the 'View' button */
+.achievement-gallery-container .desc .btns .btn-view {
+  line-height: 0;
+  display: inline;
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #ff5722;
+  /* Orange color for View button */
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin: 0;
+}
+
+.achievement-gallery-container .desc .btns .btn-view:hover {
+  background: #15b001;
+  box-shadow: 0px 4px 15px rgba(255, 87, 34, 0.4);
+  animation: zoom-in 0.6s infinite alternate;
+}
+
+/* Default message area styling (for initial state) */
+#gallery-output .default-message {
+  padding: 3rem;
+  border-radius: 10px;
+  background-color: #270a91;
+  box-shadow: 0 0 15px rgba(72, 255, 224, 0.5);
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* animation: bounce 0.5s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  /* animation: zoom-in 0.6s infinite alternate; */
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  animation: glow 1s infinite alternate;
+  /* animation: blur 0.6s infinite alternate; */
+  /* animation: hue-rotate 3s linear infinite; */
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.9s infinite alternate; */
+  /* animation: heartbeat 3s infinite; */
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+}
+
+#gallery-output .default-message h3 {
+  font-size: 2.5rem;
+  color: #fff200;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+#gallery-output .default-message p {
+  font-size: 1.6rem;
+  color: #cccccc;
+  line-height: 1.6;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+/* This class is now redundant as individual loaders handle the state. Keeping it non-hiding. */
+.achievement-gallery-content {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.achievement-gallery-content.loaded {
+  opacity: 1;
+}
+
+/* Responsive adjustment for buttons on smaller screens */
+@media screen and (max-width: 600px) {
+  .achievement-content {
+    padding: 6.5rem 2% 5rem 2%;
+  }
+
+  .achievement-content .heading {
+    font-size: 2.8rem;
+  }
+
+  .achievement-content .achievement-categories {
+    grid-template-columns: 1fr;
+    /* Stack buttons vertically */
+    padding: 0 1rem;
+  }
+
+  .achievement-btn {
+    font-size: 1.6rem;
+    padding: 1.5rem 1rem;
+    min-height: 80px;
+  }
+
+  .achievement-btn i {
+    font-size: 2.5rem;
+  }
+  
+  /* Responsive adjustment for the category display title */
+  .achievement-gallery-container h3.details-heading {
+    font-size: 3rem; 
+    margin: 3rem auto 1.5rem auto;
+  }
+
+  .achievement-gallery-container .box-container {
+    margin: 1rem 0;
+  }
+
+  .achievement-gallery-container .box-container .box {
+    flex: 1 1 100%;
+    /* Full width for smaller screens */
+    margin: 1rem 0;
+    height: 25rem;
+  }
+}
+
+
+/* --- Preloader Styles (General Data Fetching) --- */
+.preloader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  width: 100%;
+  color: #fff200;
+  text-align: center;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #fff200;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader p {
+  font-size: 1.6rem;
+  color: #771c1c;
+}
+
+/* Update default message container to match the preloader's look */
+#gallery-output .default-message {
+  /* Existing styles remain for the look */
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/* --- FOOTER STYLES (Consistent with other sections) --- */
+
+.section-footer {
+  min-height: auto;
+  padding-top: 0;
+  background: rgb(0, 42, 20);
+  margin-top: auto;
+}
+
+.section-footer .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section-footer .box-container .box {
+  flex: 1 1 25rem;
+  margin: 2.5rem;
+}
+
+.section-footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #f7c7ff;
+  padding-bottom: 1rem;
+  font-weight: normal;
+}
+
+.section-footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 0.7rem 0;
+  text-transform: none;
+}
+
+.section-footer .box-container .box p i {
+  padding-right: 1rem;
+  color: #ffe100;
+}
+
+.section-footer .box-container .box a {
+  font-size: 1.5rem;
+  color: rgb(238, 238, 238);
+  padding: 0.3rem 0;
+  display: block;
+}
+
+.section-footer .box-container .box a:hover {
+  color: #ffae00;
+}
+
+.section-footer .box-container .box .share {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.section-footer .box-container .box .share a {
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5rem;
+  font-size: 1.7rem;
+  margin-right: 1rem;
+  transition: 0.2s;
+  background: rgb(72, 0, 121);
+  color: #ffffff;
+  border: none;
+  animation: hue-rotate 3s linear infinite;
+}
+
+.section-footer .box-container .box .share a:hover {
+  background: transparent;
+  transform: scale(0.98);
+  border: 0.1rem solid rgb(180, 178, 178);
+  color: #ffcc00;
+}
+
+.section-footer .credit {
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border-top: 0.1rem solid #fff3;
+}
+
+.section-footer .credit a {
+  color: #fffb00;
+}
+
+.section-footer .fa {
+  color: #ff0202;
+  margin: 0 0.3rem;
+  font-size: 2.0rem;
+  animation: heartbeat 1s infinite;
+}
+
+/* Global Animations */
+@keyframes glow {
+  to {
+    box-shadow: 0 0 20px #ff0;
+  }
+}
+
+@keyframes hue-rotate {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes heartbeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 0 0 rgba(101, 148, 0, 0.4);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+}
+
+/* Reused animation from work-home for box hover */
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Reused animation from work-home for button hover */
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

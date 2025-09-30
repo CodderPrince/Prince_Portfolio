@@ -1,0 +1,785 @@
+/* Import global fonts (already in global.css, but for self-containment, it's included) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+/* Navbar Starts (About section specific - now matched to Home) */
+.section-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: #00484b;
+  /* Matched to home.css */
+  box-shadow: 0 1px 4px rgba(174, 176, 146, 0.3);
+  /* Matched to home.css */
+}
+
+/* logo color */
+.section-header .logo {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #ffffff;
+  /* Matched to home.css */
+}
+
+.section-header .logo i {
+  font-size: 2.2rem;
+}
+
+/* header color home, about */
+.section-header .logo:hover {
+  color: #fcf405;
+  /* Matched to home.css */
+}
+
+.section-header .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header .navbar li {
+  margin-left: 2.5rem;
+}
+
+/* navbar unselected color */
+.section-header .navbar ul li a {
+  font-size: 1.57rem;
+  color: #fff200;
+  /* Matched to home.css */
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04rem;
+  transition: 0.2s;
+}
+
+/* navbar underline color */
+.section-header .navbar ul li a.active,
+.section-header .navbar ul li a:hover {
+  color: #ffffff;
+  /* Matched to home.css */
+  border-bottom: .2rem solid #ff0101;
+  /* Matched to home.css */
+  padding: .5rem 0;
+  /* Matched to home.css */
+  animation: glow 1s infinite alternate;
+  /* Matched to home.css */
+}
+
+/* Navbar Ends */
+
+/* Hamburger icon starts (About section specific - now matched to Home)*/
+.section-header #menu {
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(255, 30, 0);
+  /* Matched to home.css */
+  display: none;
+}
+
+@media(max-width:768px) {
+  .section-header #menu {
+    display: block;
+  }
+
+  .section-header .navbar {
+    position: fixed;
+    top: 6.5rem;
+    right: -120%;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #ff0000;
+    /* Matched to home.css */
+  }
+
+  .section-header .navbar ul {
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+  .section-header .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    width: 26rem;
+  }
+
+  .section-header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: #b80a0a;
+    /* Matched to home.css */
+    font-size: 2rem;
+  }
+
+  .section-header .navbar ul li a.active,
+  .section-header .navbar ul li a:hover {
+    padding: 1rem;
+    color: #fff;
+    /* Matched to home.css */
+    border-radius: .5rem;
+    border-bottom: .5rem solid #0b0000;
+    /* Matched to home.css */
+  }
+
+  .section-header .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .section-header .navbar.nav-toggle {
+    right: 0;
+  }
+}
+
+/* Hamburger icon ends */
+
+
+/* About Section Content Styles - now matched to Home's aesthetic */
+.about-content {
+  background: #001c1e;
+  /* Darker shade similar to home header background */
+  min-height: calc(100vh - 6.5rem - 24rem);
+  /* Adjust based on actual footer height */
+  padding-top: 6.5rem;
+  /* Space for the fixed header */
+  padding: 2rem 9%;
+  /* General padding for the content area */
+  width: 100%;
+  /* Take full width */
+}
+
+.about-content .row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+
+.about-content .row .image {
+  text-align: center;
+  flex: 1 1 35rem;
+}
+
+.about-content .row .image img {
+  margin: 4rem;
+  width: 30rem;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 2px 8px rgba(4, 255, 167, 0.351);
+  /* Matched to home.css image shadow */
+  transition: 0.3s;
+  cursor: pointer;
+  animation: glow 1s infinite alternate;
+    /* animation: bounce 0.8s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  /* animation: zoom-in 0.6s infinite alternate; */
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  /* animation: glow 1s infinite alternate; */
+  /* animation: blur 0.6s infinite alternate; */
+  /* animation: hue-rotate 3s linear infinite; */
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.9s infinite alternate; */
+  /* animation: heartbeat 3s infinite; */
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+  /* Matched to home.css image animation */
+}
+
+.about-content .row .image img:hover {
+  box-shadow: 0 5px 15px rgba(0, 255, 174, 0.5);
+  /* Matched to home.css image hover shadow */
+}
+
+.about-content .row .content {
+  flex: 1 1 45rem;
+  padding: 3rem;
+}
+
+.about-content .row .content h3 {
+  color: #f7f7f7;
+  /* Matched to home.css h2 color */
+  font-size: 2.8rem;
+  /* Increased size */
+  /* Animation handled by ScrollReveal */
+}
+
+.about-content .row .content .tag {
+  font-size: 1.8rem;
+  /* Increased size */
+  color: #b1eaff;
+  /* Matched to home.css p color */
+  font-weight: 600;
+  margin-top: 1rem;
+  /* Animation handled by ScrollReveal */
+}
+
+.about-content .row .content p {
+  font-size: 2rem;
+  /* Increased size */
+  margin-top: 1.5rem;
+  font-family: "Nunito";
+  font-weight: 600;
+  text-transform: none;
+  /* Ensures no forced capitalization */
+  color: #f3ffb0;
+  /* A light color for general text */
+  /* Animation handled by JavaScript typing effect */
+}
+
+/* Style for the typing text and cursor */
+#typed-about-text {
+  font-style: italic;
+  /* Match original image's italic text */
+  border-right: .15em solid #00ffd9;
+  /* Typing cursor, matched to home's yellow accent */
+  white-space: pre-wrap;
+  /* Allows text to wrap naturally after typing */
+  overflow: hidden;
+  /* Hides the text until typed */
+  display: inline-block;
+  /* Allows border-right to be visible */
+  visibility: hidden;
+  /* Hide the span completely initially */
+  vertical-align: bottom;
+  /* Aligns the cursor with the text baseline */
+}
+
+/* Keyframes for the blinking caret */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #00ddff;
+  }
+
+  /* Blinking cursor color */
+}
+
+
+.about-content .row .content .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-family: "Nunito";
+  font-weight: 600;
+  /* Animation handled by ScrollReveal */
+}
+
+.about-content .row .content .box-container .box p {
+  text-transform: none;
+  /* Ensures no forced capitalization */
+  color: #ffffff;
+  /* A light color for general text */
+  font-size: 2rem;
+  /* Increased size */
+  /* Animation handled by ScrollReveal on parent .box-container */
+}
+
+.about-content .row .content .box-container .box p span {
+  color: rgb(255, 176, 242);
+  /* Matched to home.css p span color */
+  font-size: 2rem;
+  /* Increased size */
+}
+
+.about-content .resumebtn {
+  margin-top: 6rem;
+  /* Animation handled by ScrollReveal */
+}
+
+/* Custom button style for Resume button */
+.about-content .resumebtn .btn {
+  margin-top: 1rem;
+  position: relative;
+  line-height: 5;
+  padding: 1.6rem 3rem;
+  border-radius: .5em;
+  transition: 0.5s;
+  background-color: #ae0000;
+  /* Custom dark green */
+  color: #ffffff;
+  /* White text */
+  font-size: 3.1rem;
+  /* Adjusted for better visibility */
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  /* animation: none !important; */
+  animation: glow 1s infinite alternate;
+  
+
+}
+
+.about-content .resumebtn .btn i {
+  margin-left: 1rem;
+  transition: 0.5s;
+  
+}
+
+.about-content .resumebtn .btn:hover {
+  background-color: #b600b0;
+  /* Hover color similar to home.css social icons */
+  color: #ffffff;
+  box-shadow: 0 0 20px #ff0;
+  /* Glow effect on hover */
+  animation: glow 1s infinite alternate;
+}
+
+.about-content .resumebtn .btn:hover i {
+  transform: translateX(5px);
+}
+
+
+/* about media queries starts*/
+@media screen and (max-width: 600px) {
+  .about-content {
+    padding: 6.5rem 2rem 2rem 2rem;
+    /* Adjusted padding for mobile with fixed header */
+  }
+
+  .about-content .row .image {
+    margin-top: 2rem;
+  }
+
+  .about-content .row .image img {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .about-content .row {
+    padding: 0.5rem;
+    margin-bottom: 7rem;
+  }
+
+  .about-content .row .content {
+    padding: 1rem;
+  }
+
+  .about-content .row .content .box-container {
+    gap: 0;
+  }
+
+  .about-content .row .content h3 {
+    font-size: 2.2rem;
+    /* Adjusted for mobile */
+  }
+
+  .about-content .row .content .tag {
+    font-size: 1.6rem;
+    /* Adjusted for mobile */
+  }
+
+  .about-content .row .content p {
+    font-size: 1.7rem;
+    /* Adjusted for mobile */
+  }
+
+  .about-content .row .content .box-container .box p,
+  .about-content .row .content .box-container .box p span {
+    font-size: 1.7rem;
+    /* Adjusted for mobile */
+  }
+}
+
+/* about media queries ends*/
+
+/* Footer starts (About section specific - now matched to Home) */
+.section-footer {
+  min-height: auto;
+  padding-top: 0;
+  background: rgb(0, 42, 20);
+  /* Matched to home.css */
+  margin-top: auto;
+  /* Push footer to the bottom */
+}
+
+.section-footer .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section-footer .box-container .box {
+  flex: 1 1 25rem;
+  margin: 2.5rem;
+}
+
+.section-footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #f7c7ff;
+  /* Matched to home.css */
+  padding-bottom: 1rem;
+  font-weight: normal;
+}
+
+.section-footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  /* Matched to home.css */
+  padding: 0.7rem 0;
+  text-transform: none;
+}
+
+/* phone, mail */
+.section-footer .box-container .box p i {
+  padding-right: 1rem;
+  color: #ffe100;
+  /* Matched to home.css */
+}
+
+/* social icons */
+.section-footer .box-container .box a {
+  font-size: 1.5rem;
+  color: rgb(238, 238, 238);
+  /* Matched to home.css */
+  padding: 0.3rem 0;
+  display: block;
+}
+
+.section-footer .box-container .box a:hover {
+  color: #ffae00;
+  /* Matched to home.css */
+}
+
+.section-footer .box-container .box .share {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+/* social icons */
+.section-footer .box-container .box .share a {
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5rem;
+  font-size: 1.7rem;
+  margin-right: 1rem;
+  transition: 0.2s;
+  background: rgb(72, 0, 121);
+  /* Matched to home.css */
+  color: #ffffff;
+  /* Matched to home.css */
+  border: none;
+  animation: hue-rotate 3s linear infinite;
+  /* Matched to home.css */
+}
+
+.section-footer .box-container .box .share a:hover {
+  background: transparent;
+  transform: scale(0.98);
+  border: 0.1rem solid rgb(180, 178, 178);
+  /* Matched to home.css */
+  color: #ffcc00;
+  /* Matched to home.css */
+}
+
+.section-footer .credit {
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  /* Matched to home.css */
+  border-top: 0.1rem solid #fff3;
+}
+
+.section-footer .credit a {
+  color: #fffb00;
+  /* Matched to home.css */
+}
+
+/* love emoji */
+.section-footer .fa {
+  color: #ff0202;
+  /* Matched to home.css */
+  margin: 0 0.3rem;
+  font-size: 2.0rem;
+  /* Adjusted to match home.css more closely */
+  animation: heartbeat 1s infinite;
+  /* Matched to home.css */
+}
+
+@-webkit-keyframes pound {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pound {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 450px) {
+  .section-footer .box-container .box {
+    margin: 1.5rem;
+  }
+
+  .section-footer .box-container .box p {
+    padding: 0.7rem;
+  }
+
+  .section-footer .box-container .box .share a {
+    padding: 1.2rem;
+  }
+}
+
+/* Footer Ends */
+
+/* Custom animation (copied from home.css for self-containment, if not in a global CSS) */
+@keyframes bounce {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes wiggle {
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes tilt {
+  to {
+    transform: skewY(5deg);
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes zoom-in {
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes zoom-out {
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes flip-x {
+  to {
+    transform: rotateX(180deg);
+  }
+}
+
+@keyframes flip-y {
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes glow {
+  to {
+    box-shadow: 0 0 20px #ff0;
+  }
+}
+
+@keyframes blur {
+  to {
+    filter: blur(4px);
+  }
+}
+
+@keyframes hue-rotate {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes stretch {
+  to {
+    transform: scaleX(1.3);
+  }
+}
+
+@keyframes squash {
+  to {
+    transform: scaleY(0.7);
+  }
+}
+
+@keyframes heartbeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 150, 255, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 150, 255, 0);
+  }
+}
+
+@keyframes swing-down {
+  0% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(720deg);
+  }
+}

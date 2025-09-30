@@ -1,0 +1,226 @@
+{
+  "Programming Languages": [
+    {
+      "name": "C",
+      "icon": "https://img.icons8.com/color/48/c-programming.png"
+    },
+    {
+      "name": "C++",
+      "icon": "https://img.icons8.com/color/48/c-plus-plus-logo.png"
+    },
+    {
+      "name": "Python",
+      "icon": "https://img.icons8.com/color/48/python.png"
+    },
+    {
+      "name": "Java",
+      "icon": "https://img.icons8.com/color/48/java-coffee-cup-logo.png"
+    },
+    {
+      "name": "Dart",
+      "icon": "https://img.icons8.com/color/48/dart.png"
+    }
+  ],
+  "Mobile & Cross-Platform Development": [
+    {
+      "name": "Flutter",
+      "icon": "https://img.icons8.com/color/48/flutter.png"
+    },
+    {
+      "name": "Android",
+      "icon": "https://img.icons8.com/color/48/android-os.png"
+    },
+    {
+      "name": "Android Studio",
+      "icon": "https://img.icons8.com/color/48/android-studio--v3.png"
+    },
+    {
+      "name": "JavaFX",
+      "icon": "https://www.qftest.com/blog/resources/JavaFX.png"
+    }
+  ],
+  "Development Concepts & Architecture": [
+    {
+      "name": "OOP",
+      "icon": "https://cdn.ostad.app/public/upload/2024-01-03T06-59-39.538Z-programming.png"
+    },
+    {
+      "name": "MVVM",
+      "icon": "https://cdn.ostad.app/public/upload/2024-01-08T18-28-11.860Z-logo%20(1).png"
+    }
+  ],
+  "Web & API Development": [
+    {
+      "name": "REST API",
+      "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/48/external-api-web-development-flaticons-lineal-color-flat-icons.png"
+    },
+    {
+      "name": "API Integration",
+      "icon": "https://cdn.ostad.app/public/upload/2024-01-03T07-02-08.464Z-2620861.png"
+    },
+    {
+      "name": "Flask",
+      "icon": "https://miro.medium.com/v2/resize:fit:1200/0*gyfXTfUPF4ESdJM6.png"
+    },
+    {
+      "name": "React",
+      "icon": "https://img.icons8.com/color/48/react-native.png"
+    }
+  ],
+  "Frontend": [
+    {
+      "name": "HTML5",
+      "icon": "https://img.icons8.com/color/48/html-5.png"
+    },
+    {
+      "name": "CSS3",
+      "icon": "https://img.icons8.com/color/48/css3.png"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "https://img.icons8.com/color/48/javascript--v1.png"
+    }
+  ],
+  "Databases": [
+    {
+      "name": "MongoDB",
+      "icon": "https://img.icons8.com/color/48/mongodb.png"
+    },
+    {
+      "name": "SQLite",
+      "icon": "https://cdn.ostad.app/public/upload/2024-01-08T18-32-36.065Z-1200px-Sqlite-square-icon.svg.png"
+    },
+    {
+      "name": "MySQL",
+      "icon": "https://img.icons8.com/color/48/mysql-logo.png"
+    },
+    {
+      "name": "SQL",
+      "icon": "https://cdn-icons-png.freepik.com/256/8945/8945438.png?semt=ais_white_label"
+    },
+    {
+      "name": "Access",
+      "icon": "https://img.icons8.com/color/48/ms-access.png"
+    }
+  ],
+  "Tools & IDEs": [
+    {
+      "name": "VS Code",
+      "icon": "https://img.icons8.com/color/48/visual-studio-code-2019.png"
+    },
+    {
+      "name": "Git",
+      "icon": "https://img.icons8.com/color/48/git.png"
+    },
+    {
+      "name": "GitHub",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png"
+    },
+    {
+      "name": "Postman",
+      "icon": "https://img.icons8.com/dusk/48/postman-api.png"
+    }
+  ],
+  "Hosting & Cloud": [
+    {
+      "name": "Netlify",
+      "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+    },
+    {
+      "name": "Vercel",
+      "icon": "https://img.icons8.com/ios-filled/50/ffffff/vercel.png"
+    },
+    {
+      "name": "Firebase",
+      "icon": "https://img.icons8.com/color/48/firebase.png"
+    }
+  ],
+  "Integrations": [
+    {
+      "name": "Google Maps Integration",
+      "icon": "https://img.icons8.com/color/48/google-maps.png"
+    },
+    {
+      "name": "Payment Gateway",
+      "icon": "https://cdn.ostad.app/public/upload/2024-01-03T07-05-28.533Z-gateway.png"
+    },
+    {
+      "name": "Admob",
+      "icon": "https://cdn.ostad.app/public/upload/2024-01-08T18-27-19.743Z-unnamed.jpg"
+    }
+  ],
+  "Marketplace": [
+    {
+      "name": "CodeCanyon",
+      "icon": "https://pbs.twimg.com/profile_images/1031424411809722369/NCpFJKBv_400x400.jpg"
+    }
+  ],
+  "Microsoft Office Suite": [
+    {
+      "name": "MS Word",
+      "icon": "https://img.icons8.com/color/48/ms-word.png"
+    },
+    {
+      "name": "PowerPoint",
+      "icon": "https://img.icons8.com/color/48/ms-powerpoint.png"
+    },
+    {
+      "name": "Excel",
+      "icon": "https://img.icons8.com/color/48/ms-excel.png"
+    },
+    {
+      "name": "MS OneNote",
+      "icon": "https://www.freeiconspng.com/thumbs/microsoft-onenote-icon/microsoft-onenote-icon-3.png"
+    }
+  ],
+  "Design & Creativity": [
+    {
+      "name": "Figma",
+      "icon": "https://img.icons8.com/color/48/figma.png"
+    },
+    {
+      "name": "Photoshop",
+      "icon": "https://img.icons8.com/color/48/adobe-photoshop.png"
+    },
+    {
+      "name": "Canva",
+      "icon": "https://img.icons8.com/color/48/canva.png"
+    },
+    {
+      "name": "Snapseed",
+      "icon": "https://play-lh.googleusercontent.com/Rilq4obCk7XIl2Pjb8XT-Ydh_aI3hBNeFwro9fFXrIAuC-zPxCZ4feE4rx5fZ3jHNLw=w240-h480-rw"
+    },
+    {
+      "name": "Adobe Lightroom",
+      "icon": "https://img.icons8.com/color/48/adobe-lightroom.png"
+    },
+    {
+      "name": "CapCut",
+      "icon": "https://static.vecteezy.com/system/resources/previews/013/948/546/non_2x/capcut-logo-on-transparent-white-background-free-vector.jpg"
+    },
+    {
+      "name": "PicsArt",
+      "icon": "https://img.icons8.com/color/48/picsart.png"
+    },
+    {
+      "name": "PixelLab",
+      "icon": "https://play-lh.googleusercontent.com/TqRTx4hbmOEeHz2PrH0lcWNNt83S5S22Qm06Epw5Ja-_0rPYgNYNQkAQRLaBKr2l4ew"
+    }
+  ],
+  "Engineering & Math Software": [
+    {
+      "name": "AutoCAD",
+      "icon": "https://img.icons8.com/color/48/autodesk-autocad.png"
+    },
+    {
+      "name": "MATLAB",
+      "icon": "https://play-lh.googleusercontent.com/UB0D2bAS6M4gGtaXPbhD8zK6bRrw_KkTeNMuZ_fkx32WC_OPPeQcKmH7AiID41xDc2k=w240-h480-rw"
+    }
+  ],
+  "Misc": [
+    {
+      "name": "Maps",
+      "icon": "https://img.icons8.com/color/48/worldwide-location.png"
+    }
+  ]
+}

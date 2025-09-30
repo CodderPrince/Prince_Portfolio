@@ -1,0 +1,888 @@
+/* Import global fonts (already in global.css, but for self-containment, it's included) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+/* Navbar Starts (Home section specific) */
+.section-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: #00484b;
+  box-shadow: 0 1px 4px rgba(174, 176, 146, 0.3);
+}
+
+/* logo color */
+.section-header .logo {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #ffffff;
+  /* animation: bounce 0.5s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  /* animation: zoom-in 0.6s infinite alternate; */
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  /* animation: glow 1s infinite alternate; */
+  /* animation: blur 0.6s infinite alternate; */
+  /* animation: hue-rotate 3s linear infinite; */
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.9s infinite alternate; */
+  /* animation: heartbeat 3s infinite; */
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+}
+
+.section-header .logo i {
+  font-size: 2.2rem;
+}
+
+/* header color home, about */
+.section-header .logo:hover {
+  color: #fcf405;
+}
+
+.section-header .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header .navbar li {
+  margin-left: 2.5rem;
+}
+
+/* navbar unselected color */
+.section-header .navbar ul li a {
+  font-size: 1.57rem;
+  color: #fff200;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04rem;
+  transition: 0.2s;
+  /* animation: bounce 0.5s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  /* animation: zoom-in 0.6s infinite alternate; */
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  /* animation: glow 1s infinite alternate; */
+  /* animation: blur 0.6s infinite alternate; */
+  /* animation: hue-rotate 3s linear infinite; */
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.6s infinite alternate; */
+  /* animation: heartbeat 1s infinite; */
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+}
+
+/* navbar underline color */
+.section-header .navbar ul li a.active,
+.section-header .navbar ul li a:hover {
+  color: #ffffff;
+  border-bottom: .2rem solid #ff0101;
+  padding: .5rem 0;
+  /* animation: bounce 0.5s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  /* animation: zoom-in 0.6s infinite alternate; */
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  animation: glow 1s infinite alternate;
+  /* animation: blur 0.6s infinite alternate; */
+  /* animation: hue-rotate 3s linear infinite; */
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.6s infinite alternate; */
+  /* animation: heartbeat 1s infinite; */
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+}
+
+/* Navbar Ends */
+
+/* Hamburger icon starts (Home section specific)*/
+.section-header #menu {
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(255, 30, 0);
+  display: none;
+}
+
+@media(max-width:768px) {
+  .section-header #menu {
+    display: block;
+  }
+
+  .section-header .navbar {
+    position: fixed;
+    top: 6.5rem;
+    right: -120%;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #ff0000;
+  }
+
+  .section-header .navbar ul {
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+  .section-header .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    width: 26rem;
+  }
+
+  .section-header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: #b80a0a;
+    font-size: 2rem;
+  }
+
+  .section-header .navbar ul li a.active,
+  .section-header .navbar ul li a:hover {
+    padding: 1rem;
+    color: #fff;
+    border-radius: .5rem;
+    border-bottom: .5rem solid #0b0000;
+  }
+
+  .section-header .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .section-header .navbar.nav-toggle {
+    right: 0;
+  }
+}
+
+/* Hamburger icon ends */
+
+/* Home Section Content Styles */
+.home-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  min-height: calc(100vh - 6.5rem - 24rem);
+  /* Adjust min-height for home to fill remaining viewport, considering header and footer height */
+  padding-top: 6.5rem;
+  /* Add padding to prevent content hiding under fixed header */
+  padding: 2rem 9%;
+  /* General padding for the content area */
+  width: 100%;
+  /* Take full width */
+}
+
+.home-content #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  /* IMPORTANT: Particles canvas should be behind content for interactivity */
+}
+
+.home-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.home-content .content {
+  flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 2;
+  /* Ensure content is on top of particles */
+}
+
+.home-content .image {
+  flex: 1 1 40rem;
+  z-index: 2;
+  /* Ensure image is on top of particles */
+
+  animation: float 6s ease-in-out infinite;
+
+}
+
+.home-content .image img {
+  width: 70%;
+  margin-left: 6rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(4, 255, 167, 0.351);
+  cursor: pointer;
+  /* animation: bounce 0.5s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  /* animation: zoom-in 0.6s infinite alternate; */
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  animation: glow 1s infinite alternate;
+  /* animation: blur 0.6s infinite alternate; */
+  /* animation: hue-rotate 3s linear infinite; */
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.6s infinite alternate; */
+  /* animation: heartbeat 1s infinite; */
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+}
+
+.home-content .image img:hover {
+  box-shadow: 0 5px 15px rgba(0, 255, 174, 0.5);
+}
+
+.home-content .content h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #f7f7f7;
+  /* salam section */
+}
+
+.home-content .content h2 span {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #fffb00;
+  /* Prince */
+  /* animation: bounce 0.5s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  /* animation: zoom-in 0.6s infinite alternate; */
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  /* animation: glow 1s infinite alternate; */
+  /* animation: blur 0.6s infinite alternate; */
+  animation: hue-rotate 3s linear infinite;
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.6s infinite alternate; */
+  /* animation: heartbeat 1s infinite; */
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+}
+
+.home-content .content p {
+  font-size: 2.5rem;
+  color: #b1eaff;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.home-content .content p span {
+  font-size: 2.5rem;
+  color: rgb(255, 176, 242);
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.home-content .btn {
+  margin-top: 1rem;
+  position: relative;
+  line-height: 5;
+  padding: 1.6rem 3rem;
+  border-radius: .5em;
+  transition: 0.5s;
+
+}
+
+/* social icons start */
+.home-content .socials {
+  position: relative;
+  margin-top: 9rem;
+}
+
+.home-content .socials .social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.home-content .socials .social-icons li {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.home-content .social-icons a {
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 44px;
+  color: #ffffff;
+  background-color: #00505e;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+
+
+  /* animation: bounce 0.5s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  /* animation: zoom-in 0.6s infinite alternate; */
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  animation: glow 1s infinite alternate;
+  /* animation: blur 0.6s infinite alternate; */
+  /* animation: hue-rotate 3s linear infinite; */
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.6s infinite alternate; */
+  /* animation: heartbeat 1s infinite; */
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+
+}
+
+/* social icons color */
+.home-content .social-icons a:active,
+.home-content .social-icons a:focus,
+.home-content .social-icons a:hover {
+  color: #fff;
+  background-color: #da06da;
+}
+
+/* .home-content .social-icons a.github:hover {
+  background-color: #120002;
+}
+
+.home-content .social-icons a.linkedin:hover {
+  background-color: #0247f6;
+} */
+
+.home-content .social-icons a.instagram:hover {
+  background-color: #ee00da;
+}
+
+/* social icons end */
+
+/* hero media queries starts*/
+@media (max-width: 450px) {
+  .home-content {
+    padding: 6.5rem 2rem 2rem 2rem;
+    /* Adjusted padding for mobile with fixed header */
+  }
+
+  .home-content .btn {
+    margin: 4rem 0;
+  }
+
+  .home-content .socials {
+    margin-top: 12rem;
+  }
+
+  .home-content .image img {
+    margin-top: -12rem;
+  }
+
+  .home-content .content p {
+    font-size: 2.2rem;
+  }
+
+  .home-content .content p span {
+    font-size: 2.2rem;
+  }
+}
+
+/* hero media queries ends*/
+
+/* Footer starts (Home section specific) */
+.section-footer {
+  min-height: auto;
+  padding-top: 0;
+  background: rgb(0, 42, 20);
+  margin-top: auto;
+  /* Push footer to the bottom */
+}
+
+.section-footer .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section-footer .box-container .box {
+  flex: 1 1 25rem;
+  margin: 2.5rem;
+}
+
+.section-footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #f7c7ff;
+  /*header color*/
+  padding-bottom: 1rem;
+  font-weight: normal;
+}
+
+.section-footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  /*font color*/
+  padding: 0.7rem 0;
+  text-transform: none;
+}
+
+/* phone, mail */
+.section-footer .box-container .box p i {
+  padding-right: 1rem;
+  color: #ffe100;
+}
+
+/* social icons */
+.section-footer .box-container .box a {
+  font-size: 1.5rem;
+  color: rgb(238, 238, 238);
+  padding: 0.3rem 0;
+  display: block;
+}
+
+.section-footer .box-container .box a:hover {
+  color: #ffae00;
+}
+
+.section-footer .box-container .box .share {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+/* social icons */
+.section-footer .box-container .box .share a {
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5rem;
+  font-size: 1.7rem;
+  margin-right: 1rem;
+  transition: 0.2s;
+  background: rgb(72, 0, 121);
+  color: #ffffff;
+  border: none;
+  /* animation: bounce 0.5s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  /* animation: zoom-in 0.6s infinite alternate; */
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  /* animation: glow 1s infinite alternate; */
+  /* animation: blur 0.6s infinite alternate; */
+  animation: hue-rotate 3s linear infinite;
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.6s infinite alternate; */
+  /* animation: heartbeat 1s infinite; */
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+}
+
+.section-footer .box-container .box .share a:hover {
+  background: transparent;
+  transform: scale(0.98);
+  border: 0.1rem solid rgb(180, 178, 178);
+  color: #ffcc00;
+}
+
+.section-footer .credit {
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border-top: 0.1rem solid #fff3;
+}
+
+.section-footer .credit a {
+  color: #fffb00;
+
+
+}
+
+/* love emoji */
+.section-footer .fa {
+  color: #ff0202;
+  margin: 0 0.3rem;
+  font-size: 2.0rem;
+
+  /* animation: bounce 0.5s infinite alternate; */
+  /* animation: wiggle 0.5s infinite alternate; */
+  /* animation: spin 1s linear infinite; */
+  /* animation: pulse 1s infinite alternate; */
+  /* animation: slide 0.6s infinite alternate; */
+  /* animation: tilt 0.4s infinite alternate; */
+  /* animation: fade-in 1s forwards; */
+  /* animation: fade-out 1s forwards; */
+  /* animation: zoom-in 0.6s infinite alternate; */
+  /* animation: zoom-out 0.6s infinite alternate; */
+  /* animation: shake 0.6s infinite; */
+  /* animation: flip-x 1s infinite alternate; */
+  /* animation: flip-y 1s infinite alternate; */
+  /* animation: swing 1s infinite; */
+  /* animation: glow 1s infinite alternate; */
+  /* animation: blur 0.6s infinite alternate; */
+  /* animation: hue-rotate 3s linear infinite; */
+  /* animation: stretch 0.6s infinite alternate; */
+  /* animation: squash 0.6s infinite alternate; */
+  animation: heartbeat 1s infinite;
+  /* animation: ripple 1.2s infinite; */
+  /* animation: swing-down 0.8s forwards; */
+  /* animation: rise 0.8s forwards; */
+  /* animation: fall 0.8s forwards; */
+  /* animation: pop 0.5s forwards; */
+  /* animation: spin-slow 3s linear infinite; */
+
+}
+
+@-webkit-keyframes pound {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pound {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 450px) {
+  .section-footer .box-container .box {
+    margin: 1.5rem;
+  }
+
+  .section-footer .box-container .box p {
+    padding: 0.7rem;
+  }
+
+  .section-footer .box-container .box .share a {
+    padding: 1.2rem;
+  }
+}
+
+/* Footer Ends */
+
+
+/* Custom animation */
+@keyframes bounce {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes wiggle {
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes tilt {
+  to {
+    transform: skewY(5deg);
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes zoom-in {
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes zoom-out {
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes flip-x {
+  to {
+    transform: rotateX(180deg);
+  }
+}
+
+@keyframes flip-y {
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes glow {
+  to {
+    box-shadow: 0 0 20px #ff0;
+  }
+}
+
+@keyframes blur {
+  to {
+    filter: blur(4px);
+  }
+}
+
+@keyframes hue-rotate {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes stretch {
+  to {
+    transform: scaleX(1.3);
+  }
+}
+
+@keyframes squash {
+  to {
+    transform: scaleY(0.7);
+  }
+}
+
+@keyframes heartbeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 150, 255, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 150, 255, 0);
+  }
+}
+
+@keyframes swing-down {
+  0% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(720deg);
+  }
+}
