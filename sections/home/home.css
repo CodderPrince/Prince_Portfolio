@@ -165,7 +165,7 @@
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #ff0000;
+    background-color: #260028;
   }
 
   .section-header .navbar ul {
@@ -185,7 +185,7 @@
     display: block;
     padding: 1rem;
     text-align: left;
-    color: #b80a0a;
+    color: #b7ff00;
     font-size: 2rem;
   }
 
@@ -450,27 +450,72 @@
 @media (max-width: 450px) {
   .home-content {
     padding: 6.5rem 2rem 2rem 2rem;
-    /* Adjusted padding for mobile with fixed header */
+    flex-direction: column; /* Stack content and image vertically */
+    align-items: center; /* Center items when stacked */
+    text-align: center; /* Center text content */
   }
 
-  .home-content .btn {
-    margin: 4rem 0;
+  .home-content .content {
+    padding-top: 2rem; /* Add some space above the text content */
+    flex: none; /* Remove flex-grow/shrink to let content take natural width */
+    width: 100%; /* Ensure content takes full width */
   }
 
-  .home-content .socials {
-    margin-top: 12rem;
+  .home-content .content h2 {
+    font-size: 4rem; /* Adjust font size for smaller screens */
   }
 
-  .home-content .image img {
-    margin-top: -12rem;
+  .home-content .content h2 span {
+    font-size: 4rem; /* Adjust font size for smaller screens */
   }
 
   .home-content .content p {
-    font-size: 2.2rem;
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+    padding: 0.5rem 0; /* Reduce padding for paragraphs */
   }
 
   .home-content .content p span {
-    font-size: 2.2rem;
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .home-content .btn {
+    margin: 2rem auto; /* Center button and adjust margin */
+    line-height: 1; /* Reset line-height to default for better button sizing */
+    padding: 1.2rem 2.5rem; /* Adjust button padding */
+  }
+
+  .home-content .image {
+    order: -1; /* Place the image above the text content */
+    flex: none; /* Remove flex-grow/shrink */
+    width: 100%; /* Ensure image container takes full width */
+    margin-top: 2rem; /* Add margin to separate from navbar */
+    margin-bottom: 2rem; /* Add margin to separate from content */
+    animation: none; /* Disable float animation on mobile for stability */
+  }
+
+  .home-content .image img {
+    width: 60%; /* Reduce image size for mobile */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure margin: auto works */
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(4, 255, 167, 0.351);
+    /* Keep glow animation if desired, or remove */
+    animation: glow 1s infinite alternate;
+  }
+
+  .home-content .socials {
+    margin-top: 4rem; /* Adjust margin for social icons */
+    text-align: center; /* Center social icons */
+  }
+
+  .home-content .socials .social-icons {
+    display: flex;
+    justify-content: center; /* Center social icons horizontally */
+    flex-wrap: wrap; /* Allow icons to wrap if too many */
+  }
+
+  .home-content .socials .social-icons li {
+    margin-bottom: 10px; /* Adjust spacing between icons */
   }
 }
 
