@@ -98,7 +98,7 @@
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #ff0000;
+    background-color: #260028;
     /* Matched to home.css */
   }
 
@@ -119,7 +119,7 @@
     display: block;
     padding: 1rem;
     text-align: left;
-    color: #b80a0a;
+    color: #b7ff00;
     /* Matched to home.css */
     font-size: 2rem;
   }
@@ -183,7 +183,7 @@
   transition: 0.3s;
   cursor: pointer;
   animation: glow 1s infinite alternate;
-    /* animation: bounce 0.8s infinite alternate; */
+  /* animation: bounce 0.8s infinite alternate; */
   /* animation: wiggle 0.5s infinite alternate; */
   /* animation: spin 1s linear infinite; */
   /* animation: pulse 1s infinite alternate; */
@@ -337,14 +337,14 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   /* animation: none !important; */
   animation: glow 1s infinite alternate;
-  
+
 
 }
 
 .about-content .resumebtn .btn i {
   margin-left: 1rem;
   transition: 0.5s;
-  
+
 }
 
 .about-content .resumebtn .btn:hover {
