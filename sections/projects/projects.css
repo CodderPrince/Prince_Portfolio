@@ -83,7 +83,7 @@
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #ff0000;
+    background-color: #260028;
   }
 
   .section-header .navbar ul {
@@ -102,7 +102,7 @@
     display: block;
     padding: 1rem;
     text-align: left;
-    color: #b80a0a;
+    color: #b7ff00;
     font-size: 2rem;
   }
 
