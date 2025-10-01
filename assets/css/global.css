@@ -94,13 +94,13 @@ html::-webkit-scrollbar-thumb {
 /* Common Section Heading Style */
 .heading {
   font-size: 3.5rem;
-  color: rgb(32, 32, 32);
+  color: rgb(255, 255, 255);
   font-weight: 800;
   text-align: center;
 }
 
 .heading span {
-  color: rgb(115, 3, 167);
+  color: rgb(173, 255, 10);
 }
 
 /* Common Button Styles */
