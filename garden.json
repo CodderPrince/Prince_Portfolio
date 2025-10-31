@@ -32,6 +32,14 @@
         }
     },
     {
+        "name": "Garden",
+        "image": "https://drive.google.com/file/d/1pcfOQZYIewOwJmzdzof6Lwx0W8F8IZvn/view?usp=sharing",
+        "desc": "My small belconi garden.🥰",
+        "links": {
+            "view": "https://drive.google.com/file/d/1pcfOQZYIewOwJmzdzof6Lwx0W8F8IZvn/view?usp=sharing"
+        }
+    },
+    {
         "name": "Joba",
         "image": "https://drive.google.com/thumbnail?id=1fVcAtDjxU3EyX17w0t0EBdW9X6Jv67Za",
         "desc": "Joba is a beautiful flower. It is a symbol of elegance and grace.",
@@ -327,4 +335,5 @@
             "view": "https://drive.google.com/file/d/1WARC4kFe-7MeWfZdwJBnru_pCwisLE_5/view?usp=sharing"
         }
     }
+
 ]
