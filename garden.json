@@ -7,6 +7,14 @@
             "view": "https://drive.google.com/file/d/1js-p-cbt4OPs8ktd603WarEwq2tc_-FF/view"
         }
     },
+     {
+        "name": "Nayantara",
+        "image": "https://drive.google.com/thumbnail?id=1gj43kAdFoSMm7hbh5YleiGS0YjOTNeFq",
+        "desc": "Nayantar is a beautiful flower. It is a symbol of elegance and grace.",
+        "links": {
+            "view": "https://drive.google.com/file/d/1gj43kAdFoSMm7hbh5YleiGS0YjOTNeFq/view"
+        }
+    },
     {
         "name": "Nayantara",
         "image": "https://drive.google.com/thumbnail?id=1zp21_X_uxZ4FUx6fESwETDboKAOoneCY",
@@ -337,5 +345,6 @@
     }
 
 ]
+
 
 
