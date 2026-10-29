@@ -1,12 +1,13 @@
 [
-    {
-        "name": "Media Partner Prize📸",
-        "image": "https://github.com/CodderPrince/Portfolio-Assets/blob/main/Photography/Media%20Partner/IMG_20250929_210016_759.jpg?raw=true",
-        "desc": "Gifted with a Media Partner Prize from Research Society.",
-        "links": {
-            "view": "https://github.com/CodderPrince/Portfolio-Assets/blob/main/Photography/Media%20Partner/IMG_20250929_210016_759.jpg?raw=true"
-        }
-    },
+    
+    //{
+       // "name": "Media Partner Prize📸",
+        //"image": "https://github.com/CodderPrince/Portfolio-Assets/blob/main/Photography/Media%20Partner/IMG_20250929_210016_759.jpg?raw=true",
+        //"desc": "Gifted with a Media Partner Prize from Research Society.",
+        //"links": {
+          //  "view": "https://github.com/CodderPrince/Portfolio-Assets/blob/main/Photography/Media%20Partner/IMG_20250929_210016_759.jpg?raw=true"
+        //}
+    //},
     {
         "name": "Prince Photography",
         "image": "https://drive.google.com/thumbnail?id=1gHLrR1q8AP1FEhFVmzIyjzh6jTwNc9A9",
